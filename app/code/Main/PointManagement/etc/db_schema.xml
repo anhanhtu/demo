@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote">
+        <column xsi:type="int" name="point_use" unsigned="false" identity="false" nullable="true" comment="Point Use"/>
+        <column xsi:type="int" name="point_balance" unsigned="false" identity="false" default="0" comment="Point Balance"/>
+        <column xsi:type="decimal" name="base_used_point_rate" scale="4" precision="12" unsigned="false" nullable="false"
+                default="0" comment="Point Use With Rate"/>
+    </table>
+</schema>
